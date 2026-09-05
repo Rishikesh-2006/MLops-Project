@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>Home-Page</title>
+    </head>
+    <body style = "background-color:lightblue; margin:15px;">
+        <h1 style = "color : black;">Iris Flower Detector</h1>
+        <br>
+        <form method = 'Post' action = "{{url_for('predict')}}">
+
+                First_val : <input type = 'text'  name = 'val_a' placeholder = 'Enter a'><br><br>
+                second_val :<input type = 'text' name = 'val_b' placeholder = 'Enter b'><br><br>
+                third_val : <input type = 'text' name = 'val_c' placeholder = 'Enter c'><br><br>
+                fourth_val :<input type = 'text' name = 'val_d' placeholder = 'Enter d'><br><br>
+                <input type = 'submit' value = 'Predict'>
+        </form>
+        <br>
+        {{prediction_value}}
+    </body>
+</html>
